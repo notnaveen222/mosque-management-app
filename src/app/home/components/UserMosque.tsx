@@ -2,7 +2,7 @@ export default function UserMosque() {
   const MOSQUE = "Pattambi Town Juma Masjid";
   const MOSQUE_LOCATION = "Pattambi Town, Pattambi";
   return (
-    <div className="border-2 border-blue-400 rounded-xl p-5 flex flex-col w-full">
+    <div className="border-2 border-blue-400 rounded-xl p-4 sm:p-5 flex flex-col w-full">
       <div className="flex gap-x-3 mb-3">
         <svg
           className="size-5"
@@ -19,8 +19,10 @@ export default function UserMosque() {
         </svg>
         <div className="text-neutral-500 text-sm">My mosque</div>
       </div>
-      <div className="text-2xl font-medium">{MOSQUE}</div>
-      <div className="text-xl text-neutral-500">{MOSQUE_LOCATION}</div>
+      <div className="text-xl sm:text-2xl font-medium">{MOSQUE}</div>
+      <div className="text-lg sm:text-xl text-neutral-500">
+        {MOSQUE_LOCATION}
+      </div>
     </div>
   );
 }
