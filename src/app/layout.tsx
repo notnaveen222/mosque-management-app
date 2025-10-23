@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased flex justify-center`}>
-        <div className="relative flex flex-col w-full max-w-xl min-h-screen ">
+        <div className="relative flex flex-col w-full max-w-xl min-h-screen border-x border-x-neutral-400/20 ">
           <main className="flex-1 overflow-y-auto ">{children}</main>
 
-          <div className="sticky bottom-0 left-0 w-full border-t border-neutral-300 bg-white">
+          <div className="sticky bottom-0 left-0 w-full border-t border-neutral-300 bg-white ">
             <Bottombar />
           </div>
         </div>

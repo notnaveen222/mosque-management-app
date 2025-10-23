@@ -6,7 +6,7 @@ import { MoneyReceiptIcon } from "./components/Icons";
 export default function Home() {
   const AMOUNT = 20750;
   return (
-    <div className=" flex flex-col px-4 sm:px-2 min-h-screen pb-24">
+    <div className=" flex flex-col px-4 sm:px-8 min-h-screen pb-24">
       <HomeHeader amount={AMOUNT} />
       <UserMosque />
       <Link
@@ -28,7 +28,7 @@ export default function Home() {
           />
         </svg>
 
-        <div className="text-neutral-400 text-lg sm:text-xl">
+        <div className="text-neutral-500 text-lg sm:text-xl">
           Search House Number or Name
         </div>
       </Link>

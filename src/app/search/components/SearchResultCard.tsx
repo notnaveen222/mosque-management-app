@@ -1,0 +1,27 @@
+interface CardProps {
+  houseNumber: number;
+  name: string;
+  fatherName: string;
+  familyName: string;
+  key: number;
+}
+export default function SearchResultCard({
+  houseNumber,
+  name,
+  fatherName,
+  familyName,
+  key,
+}: CardProps) {
+  return (
+    <div
+      key={key}
+      className="bg-brand-bg-blue/5 border border-brand-bg-blue/40 flex flex-col p-3 text-brand-navy-blue rounded-xl cursor-pointer"
+    >
+      <div>
+        {houseNumber}. {name}
+      </div>
+      <div className="">s/o {fatherName}</div>
+      <div className="text-sm text-brand-navy-blue/50">{familyName}</div>
+    </div>
+  );
+}
