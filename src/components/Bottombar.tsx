@@ -14,7 +14,7 @@ export default function Bottombar() {
     { href: "/user", icon: <UserIcon active={pathname === "/user"} /> },
   ];
   return (
-    <div className="w-screen sm:max-w-xl sm:w-full  fixed bottom-0 flex justify-between px-5  border-t py-5 border-t-neutral-500">
+    <div className="w-screen sm:max-w-xl sm:w-full  fixed bottom-0 flex justify-between px-5 py-5 border-t border-t-neutral-400">
       {ROUTES.map((route, index) => (
         <Link key={`sidebar-${index}`} href={route.href}>
           {route.icon}

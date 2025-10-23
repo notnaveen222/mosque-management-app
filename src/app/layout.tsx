@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} w-screen sm:max-w-xl mx-auto antialiased `}
       >
-        <div>{children}</div>
+        <div className="h-full">{children}</div>
         <Bottombar />
       </body>
     </html>
