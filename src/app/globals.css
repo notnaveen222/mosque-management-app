@@ -11,6 +11,8 @@
   --color-brand-bg-shade: #dce3ff;
   --color-brand-bg-blue: #456eff;
   --color-brand-navy-blue: #44548e;
+  --color-brand-title-text: #9faad0;
+  --color-brand-value-text: #9aa7d6;
 }
 
 body {

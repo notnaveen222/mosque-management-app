@@ -1,4 +1,6 @@
+import BackButton from "./components/Backbutton";
 import SearchResultCard from "./components/SearchResultCard";
+import SearchBar from "./components/Searchbar";
 
 export default function SearchPage() {
   const residents = [
@@ -65,25 +67,10 @@ export default function SearchPage() {
   ];
 
   return (
-    <div className="flex flex-col px-4 sm:px-8">
-      <div className="flex gap-x-2 items-center">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="size-8 sm:size-10"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 19.5 8.25 12l7.5-7.5"
-            />
-          </svg>
-        </div>
-        <div className="w-full rounded-full bg-brand-bg-shade/60 flex items-center p-3 sm:p-6 gap-x-4 my-5">
+    <div className="flex flex-col px-4 sm:px-8 pt-8">
+      <div className="flex gap-x-2 items-center mb-5">
+        <BackButton />
+        <div className="w-full rounded-full bg-brand-bg-shade/60 flex items-center p-3 sm:p-6 gap-x-4 ">
           <svg
             className="size-5"
             width="15"
@@ -99,10 +86,7 @@ export default function SearchPage() {
             />
           </svg>
 
-          <input
-            className="text-brand-navy-blue placeholder:text-neutral-500 bg-transparent focus:outline-none placeholder:text-lg text-lg sm:text-xl w-full"
-            placeholder="Search House Number or Name"
-          />
+          <SearchBar />
         </div>
       </div>
       <div className="space-y-2">

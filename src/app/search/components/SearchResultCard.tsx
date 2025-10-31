@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface CardProps {
   houseNumber: number;
   name: string;
@@ -13,7 +15,8 @@ export default function SearchResultCard({
   key,
 }: CardProps) {
   return (
-    <div
+    <Link
+      href={`/search/house/${houseNumber}`}
       key={key}
       className="bg-brand-bg-blue/5 border border-brand-bg-blue/40 flex flex-col p-3 text-brand-navy-blue rounded-xl cursor-pointer"
     >
@@ -22,6 +25,6 @@ export default function SearchResultCard({
       </div>
       <div className="">s/o {fatherName}</div>
       <div className="text-sm text-brand-navy-blue/50">{familyName}</div>
-    </div>
+    </Link>
   );
 }
