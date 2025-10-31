@@ -5,19 +5,16 @@ interface CardProps {
   name: string;
   fatherName: string;
   familyName: string;
-  key: number;
 }
 export default function SearchResultCard({
   houseNumber,
   name,
   fatherName,
   familyName,
-  key,
 }: CardProps) {
   return (
     <Link
       href={`/search/house/${houseNumber}`}
-      key={key}
       className="bg-brand-bg-blue/5 border border-brand-bg-blue/40 flex flex-col p-3 text-brand-navy-blue rounded-xl cursor-pointer"
     >
       <div>

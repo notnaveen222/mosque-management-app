@@ -2,6 +2,9 @@
 import { useParams } from "next/navigation";
 import BackButton from "../../components/Backbutton";
 import InfoField from "./components/InfoField";
+import HouseActionButton from "./components/HouseActionButton";
+import { FamilyIcon, HistoryIcon, PenIcon } from "./components/Icons";
+import { title } from "process";
 
 export default function HousePage() {
   const houseId = useParams().id;
@@ -29,6 +32,19 @@ export default function HousePage() {
             <div className="text-7xl text-brand-value-text">₹120</div>
           </div>
         </div>
+      </div>
+      <div className="flex space-x-2">
+        <HouseActionButton
+          icon={<FamilyIcon />}
+          title="Family"
+          route="family"
+        />
+        <HouseActionButton
+          icon={<HistoryIcon />}
+          title="History"
+          route="history"
+        />
+        <HouseActionButton icon={<PenIcon />} title="Details" route="edit" />
       </div>
     </div>
   );
